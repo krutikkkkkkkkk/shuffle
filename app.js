@@ -19,5 +19,15 @@ function mixUp() {
 shuffled.forEach(function(currentNumber) {
     output.innerHTML += currentNumber + "\n";
 })
+alert("Shuffling Successful")
+}
+
+function copy() {
+  var copyText = document.getElementById("output");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
 }
 ///Stack Overflow 
+
+
